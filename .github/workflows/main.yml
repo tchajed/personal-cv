@@ -1,0 +1,11 @@
+name: Build PDF
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: cv.tex
