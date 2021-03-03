@@ -23,16 +23,17 @@
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+
 % personal data
-\firstname{FirstName}
-\familyname{LastName}
+\firstname{Tej}
+\familyname{Chajed}
 \title{Curriculum Vitae}               % optional, remove the line if not wanted
 \address{Address}    % optional, remove the line if not wanted
-\mobile{+98~(000)~000~0000}                     % optional, remove the line if not wanted
+\mobile{+1~(217)~840~0140}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
-\email{email@mail.com}                          % optional, remove the line if not wanted
-\homepage{www.site.com}                    % optional, remove the line if not wanted
+\email{tchajed@mit.edu}                          % optional, remove the line if not wanted
+\homepage{https://chajed.io}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[110pt][0.01pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -54,84 +55,110 @@
 \makecvtitle
 
 \section{Education}
-\cventry{StartDate--EndDate}{Ph.D. in ProgramTitle}{}{GPA: 0/4, UniversityName, City, Canada}{}{}{}
-\cvlistitem {\textbf{Ph.D. Thesis:} "\textit{Title of Ph.D. Thesis}," under supervision of \textbf{Prof. SupervisorName} }
-\cventry{StartDate--EndDate}{M.Sc. in ProgramTitle}{}{GPA: 0/4, UniversityName, City, Canada}{}{}{}
-\cvlistitem {\textbf{M.Sc. Thesis:} "\textit{Title of Ph.D. Thesis}," under supervision of \textbf{Prof. SupervisorName} }
-\cventry{StartDate--EndDate}{B.Sc. in ProgramTitle}{}{GPA: 0/4, UniversityName, City, Canada}{}{}{}
-\cvlistitem {\textbf{B.Sc. Thesis:} "\textit{Title of B.Sc. Thesis}," under supervision of \textbf{Prof. SupervisorName} }
+\cventry{2014--2021 (expected)}{Ph.D. in Computer Science}{}{MIT, Cambridge, MA}{}{}{}
+%\cvlistitem {\textbf{Ph.D. Thesis:} "\textit{Title of Ph.D. Thesis}," under supervision of \textbf{Prof. SupervisorName} }
+\cventry{2014--2017}{M.S. in Computer Science}{}{GPA: 4.0/4.0, MIT, Cambridge, MA}{}{}{}
+\cvlistitem {\textbf{M.S. Thesis:} ``Verifying an I/O-concurrent file system''}
+\cventry{2010--2014}{B.S. in Electrical Engineering and Computer Science}{}{GPA: 3.97/4.0, University of Illinois, Urbana, IL}{}{}{}
+%\cvlistitem {\textbf{B.Sc. Thesis:} "\textit{Title of B.Sc. Thesis}," under supervision of \textbf{Prof. SupervisorName} }
 
+\section{Industry Experience}
+\cventry{Summer 2017}{Research Intern}{}{Microsoft Research, Cambridge, UK}{}{}{}
+\cvlistitem{Verifying low-level parsing in F* for TLS}
+\cventry{Summer 2014}{Software Engineering Intern}{}{Google, Zurich, Switzerland}{}{}{}
 
-\section{Research Interests}\cvlistitem {\textbf{Research Interest Title 1} \\Description}
-\cvlistitem {\textbf{Research Interest Title 2} \\Description}
-\cvlistitem {\textbf{Research Interest Title 3} \\Description}
-\cvlistitem {\textbf{Research Interest Title 4} \\Description}
+\section{Research Interests}
+
+I'm interested in verifying concurrent storage systems. The systems that store
+our data --- like file systems, key-value stores, and databases --- are critical
+infrastructure, but still have bugs. My research aims to use formal verification
+to rule out bugs by proving that the system's implementation always follows a
+specification of its intended behavior. Storage is especially interesting
+because of the importance of handling crashes (the system should retain your
+data even if the computer suddenly turns off) and concurrency (for performance,
+the system should process requests concurrently on a multicore CPU).
+
+%\cvlistitem {\textbf{Research Interest Title 1} \\Description}
 
 \section{Honors \& Awards}
-\cvlistitem{Honor1 Description }
-\cvlistitem{Honor2 Description }
-\cvlistitem{Honor3 Description }
-\cvlistitem{Honor4 Description }
+\cvlistitem{NSF Graduate Research Fellowship 2014--2019}
+\cvlistitem{Jacobs Presidential Fellowship 2014}
+\cvlistitem{Chancellor's Scholar 2010--2014}
 
 
 \section{Research Experiences}
 
-\cventry{Start--End}{Position}{}{institution, Research Group, under supervision of Supervisor-Name}{}{}
-\cvlistitem {\textbf{Project Description}
-}
-\cventry{Start--End}{Position}{}{institution, Research Group, under supervision of Supervisor-Name}{}{}
-\cvlistitem {\textbf{Project Description}
-}
-\cventry{Start--End}{Position}{}{institution, Research Group, under supervision of Supervisor-Name}{}{}
-\cvlistitem {\textbf{Project Description}
-}
+\cventry{2014--present}{Research assistant}{}{at MIT in the PDOS group, under supervision of Frans Kaashoek and Nickolai Zeldovich}{}{}
+%\cvlistitem {\textbf{Project Description}
+%}
+\cventry{2013--2014}{Undergraduate researcher}{}{at University of Illinois in the DPRG group, under supervision of Indranil Gupta}{}{}
 
-\section{Course Projects}
+\section{Conference Publications}
+\cvlistitem{Tej Chajed, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich,
+``Verifying concurrent, crash-safe systems with Perennial,''
+in SOSP 2019}
+\cvlistitem{Tahina Ramananandro, Antoine Delignat-Lavaud, Cédric Fournet, Nikhil
+Swamy, Tej Chajed, Nadim Kobeissi, and Jonathan Protzenko,
+``EverParse: Verified Secure Zero-Copy Parsers for Authenticated Message Formats,''
+in USENIX Security 2019}
+\cvlistitem{Tej Chajed, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich,
+  ``Argosy: Verifying Layered Storage Systems with Recovery Refinement,''
+in PLDI 2019}
+\cvlistitem{Tej Chajed, M. Frans Kaashoek, Butler Lampson, and Nickolai Zeldovich,
+``Verifying concurrent software using movers in CSPEC,''
+in OSDI 2018}
+\cvlistitem{Atalay \.{I}leri, Tej Chajed, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich,
+``Proving confidentiality in a file system using DiskSec,''
+in OSDI 2018}
+\cvlistitem{Haogang Chen, Tej Chajed, Alex Konradi, Stephanie Wang, Atalay \.{I}leri, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich,
+  ``Verifying a high-performance crash-safe file system
+using a tree specification,''
+in SOSP 2017}
+\cvlistitem{Haogang Chen, Daniel Ziegler, Tej Chajed, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich,
+``Using Crash Hoare Logic for certifying the FSCQ file system,''
+in SOSP 2015}
+\cvlistitem{Brian Cho, Muntasir Rahman, Tej Chajed, Indranil Gupta, Cristina Abad, Nathan Roberts, Philbert Lin,
+``Natjam: design and evaluation of eviction policies for supporting priorities and deadlines in mapreduce clusters,''
+in SOCC 2013}
 
-\cvlistitem{\textbf{Course Title 1} \\ \textit{Project Title:} Project Descriptions. }
-\cvlistitem{\textbf{Course Title 2} \\ \textit{Project Title:} Project Descriptions. }
-\cvlistitem{\textbf{Course Title 3} \\ \textit{Project Title:} Project Descriptions. }
-
-\section{Publications}
-\cvlistitem{Author1 and Author2, "Conference Paper Title," \textit{conference Name}, City, country, year, pp. 1-last page.}
-\cvlistitem{Author1 and Author2, "journal Paper Title," in \textit{journal Name}, vol. 00, no. 0, pp. 00-00, Month, year.}
-
-
-\section{Teaching Experiences}
-\cventry{Date}{Position}{}{Course Name, UniversityName, City, Country}{}{}
-\cventry{Date}{Position}{}{Course Name, UniversityName, City, Country}{}{}
-
-
-\section{Related Courses}
-\cvlistitem {Course1 Name: 0/4}
-\cvlistitem {Course2 Name: 0/4}
-\cvlistitem {Course3 Name: 0/4}
-\cvlistitem {Course4 Name: 0/4}
-
-\section{Activities}
-\cvlistitem {IEEE International Black Sea Conference on Communications and Networking (BlackSeaCom 17), Istanbul, Turkey, June 2017}
-\cvlistitem {4\textsuperscript{\textit{th}} COST Action IC1101 (OPTICWISE) Training School on optical wireless communications, September 7\textsuperscript{\textit{th}}-10\textsuperscript{\textit{th}} 2015 at Ozyegin University, Istanbul, Turkey}
-\cvlistitem {1\textsuperscript{\textit{st}} International Conference on in Communications , Signal Processing, and their Applications (ICCSPA), February 12\textsuperscript{\textit{th}}-14\textsuperscript{\textit{th}} 2013 at American University of Sharjah, Sharjah, UAE.}
-
-
-\section{Skills}
-\cvlistitem {\textbf{Skill Set1} \\ Skills list}
-\cvlistitem {\textbf{Skill Set2} \\\ Skills list}
-
-\section{Languages}
-\cvlistitem {\textbf{Language:} Level \\ Exam: 96/120 (Reading:00, Listening:00, Speaking:00, Writing:00)}
-
-\cvlistitem {\textbf{Language:} Level \\ Exam: 96/120 (Reading:00, Listening:00, Speaking:00, Writing:00)}
-\cvlistitem {\textbf{Language:} Level \\ Exam: 96/120 (Reading:00, Listening:00, Speaking:00, Writing:00)}
+\section{Workshop Papers}
+\cvlistitem{Tej Chajed,
+``Record Updates in Coq,''
+in CoqPL 2021}
+\cvlistitem{Tej Chajed, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich,
+  ``Verifying concurrent Go code in Coq with Goose'',
+in CoqPL 2020}
+\cvlistitem{Tej Chajed, Jon Gjengset, Jelle van den Hooff, M. Frans Kaashoek, James Mickens, Robert Morris, and Nickolai Zeldovich,
+``Amber: Decoupling user data from web applications,''
+in HotOS 2015}
 
 
-\section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
+\section{Teaching Experiences}\nopagebreak
+\cventry{Fall 2020}{TA}{}{6.826 (Principles of Computer Systems), MIT, Cambridge, MA}{}{}
+\cventry{Fall 2019}{TA}{}{6.826 (Principles of Computer Systems), MIT, Cambridge, MA}{}{}
+\cventry{Fall 2017}{TA}{}{6.826 (Principles of Computer Systems), MIT, Cambridge, MA}{}{}
+\cventry{Spring 2017}{Course development}{}{6.826 (Principles of Computer Systems), MIT, Cambridge, MA}{}{}
+
+I helped develop the labs for 6.826 (Principles of Computer Systems) during Spring 2017.
+
+%\section{Related Courses}
+%\cvlistitem {Course1 Name: 0/4}
+%\cvlistitem {Course2 Name: 0/4}
+%\cvlistitem {Course3 Name: 0/4}
+%\cvlistitem {Course4 Name: 0/4}
+
+\pagebreak
+\section{Professional Service}
+\cvlistitem {Organized a tutorial at POPL 2021, ``Iris – A Modular Foundation for Higher-Order Concurrent Separation Logic''}
+\cvlistitem {EuroDW 2021 (EuroSys Doctoral Workshop), PC}
+\cvlistitem {POPL 2021, Artifact Evaluation Committee}
+\cvlistitem {PLDI 2020, Artifact Evaluation Committee}
+\cvlistitem {POPL 2020, Artifact Evaluation Committee}
+\cvlistitem {SOSP 2019, Artifact Evaluation Committee}
 
 \section{References}
-\cvlistitem{\textbf{SupervisorName} \\ Department \\Faculty \\University \\City, Country\\email@email.com\\}
+\cvlistitem{\textbf{Frans Kaashoek} \\ kaashoek@mit.edu}
+\cvlistitem{\textbf{Nickolai Zeldovich} \\ nickolai@csail.mit.edu}
 
 \end{document}
 
