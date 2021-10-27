@@ -33,7 +33,11 @@
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{tchajed@mit.edu}                          % optional, remove the line if not wanted
-\homepage{chajed.io}                    % optional, remove the line if not wanted
+\renewcommand*{\httpslink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{#2}{#2}}%
+    {\href{#2}{\detokenize{#1}}}}
+\homepage{https://chajed.io}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[110pt][0.01pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -50,7 +54,6 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\renewcommand*{\httplink}[2]{\href{#1}{#2}}
 %\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
