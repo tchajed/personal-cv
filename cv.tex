@@ -42,6 +42,8 @@
 %\photo[110pt][0.01pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
+\newcommand{\colorhref}[2]{\href{#1}{\textcolor{cyan}{\underline{#2}}}}
+
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
@@ -135,6 +137,14 @@ using a tree specification}%
 \cventry{Spring 2017}{Course development}{}{6.826 (Principles of Computer
   Systems), MIT, Cambridge, MA}{}%
 {During this time I designed and implemented the programming assignments for 6.826.}
+
+\section{Mentorship}\nopagebreak
+\cvline{2021}{Mark Theng, master's}
+\cvline{2021}{Sharon Lin, undergrad}
+\cvline{2020}{Sydney Gibson, \colorhref{https://pdos.csail.mit.edu/papers/gibsons-meng.pdf}{master's}}
+\cvline{2019}{Eleftherios Ionnidis, \colorhref{https://pdos.csail.mit.edu/papers/elefthei-meng.pdf}{master's}}
+\cvline{2017}{Alex Konradi, \colorhref{https://pdos.csail.mit.edu/papers/akonradi-meng.pdf}{master's}}
+\cvline{2017}{Daniel Ziegler, \colorhref{https://pdos.csail.mit.edu/papers/ziegler-meng.pdf}{master's}}
 
 %\section{Related Courses}
 %\cvlistitem {Course1 Name: 0/4}
