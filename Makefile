@@ -1,2 +1,2 @@
 cv.pdf: cv.tex
-	latexrun $<
+	latexrun --latex-cmd xelatex $<
